@@ -6,7 +6,7 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:31:14 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 14:30:00 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/29 14:59:13 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 char	ft_strrchr(char *str, char c)
 {
-    int	i;
+	int	i;
 
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (str[i] = c)
+		if (str[i] == c)
 			return (&str[i]);
 		i++;
 	}

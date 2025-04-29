@@ -6,7 +6,7 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 16:58:52 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 14:46:22 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/29 14:54:30 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	t_list	*temp;
 
 	if (!lst || !del)
-		return;
+		return ;
 	while (*lst)
 	{
 		temp = (*lst)->next;
@@ -25,5 +25,5 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 		free(*lst);
 		*lst = temp;
 	}
-	*lst = NULL; 
+	*lst = NULL;
 }

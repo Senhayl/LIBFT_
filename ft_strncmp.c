@@ -6,7 +6,7 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:31:03 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 14:24:48 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/29 15:01:10 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-    int	i;
+	int	i;
 
 	i = 0;
 	while ((s1[i] != '\0' || s2[i] != '\0') && i < n)

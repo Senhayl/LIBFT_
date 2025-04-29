@@ -6,7 +6,7 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:16:25 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 14:43:36 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/29 14:56:50 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-    char	*str;
-    int		s1len;
-    int		s2len;
-    int		i;
-    int		j;
-    
+	char	*str;
+	int	s1len;
+	int	s2len;
+	int	i;
+	int	j;
+
 	s1len = ft_strlen(s1);
 	s2len = ft_strlen(s2);
 	str = (char *)malloc(sizeof(char) * (s1len + s2len + 1));

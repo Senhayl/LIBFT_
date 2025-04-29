@@ -6,7 +6,7 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:31:24 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 14:25:52 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/29 15:00:58 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-    char	*substr;
-    unsigned int	i;
+	char	*substr;
+	unsigned int	i;
 
 	if (!s)
 		return (NULL);

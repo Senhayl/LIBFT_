@@ -6,7 +6,7 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:15:56 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 14:49:13 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/29 15:02:06 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_putstr(char const *s)
 	i = 0;
 	while (s[i])
 	{
-		write(1,&s[i],1);
+		write(1, &s[i], 1);
 		i++;
 	}
 }

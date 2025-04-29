@@ -6,7 +6,7 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:14:22 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 14:44:02 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/29 14:55:51 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_bzero(void *s, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		((unsigned char*)s)[i] = 0;
+		((unsigned char *)s)[i] = 0;
 		i++;
 	}
 	return (s);

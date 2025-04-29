@@ -6,7 +6,7 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:16:08 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 14:47:27 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/29 14:53:35 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 void	ft_strclr(char *s)
 {
-    int	i;
+	int	i;
 
 	i = 0;
 	while (s[i])
 	{
 		s[i] = '\0';
 		i++;
-	}  // Necessaire ou pas ?? s1[i] == '\0';
+	}
 }

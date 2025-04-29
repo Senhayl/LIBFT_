@@ -6,7 +6,7 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:16:04 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 14:29:31 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/29 14:54:56 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-    int	lens;
+	int	lens;
 
 	if (!s)
 		return (NULL);

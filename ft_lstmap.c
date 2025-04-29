@@ -6,7 +6,7 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 11:00:53 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 14:40:33 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/29 14:58:31 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-    t_list	*new_list;
-    t_list	*new_node;
+	t_list	*new_list;
+	t_list	*new_node;
 
 	new_list = NULL;
 	if (!lst || !f)

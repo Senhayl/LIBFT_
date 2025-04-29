@@ -6,7 +6,7 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:14:25 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 14:17:57 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/29 15:05:04 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_atoi(const char *nptr)
 {
-    int	i;
-    int	sign;
-    int	value;
+	int	i;
+	int	sign;
+	int	value;
 
 	i = 0;
 	sign = 1;
@@ -26,9 +26,9 @@ int	ft_atoi(const char *nptr)
 	if (nptr[i] == '-' || nptr[i] == '+')
 	{
 		if (nptr[i] == '-')
-		sign = -sign;
+		sign = - sign;
 		i++;
-    }
+	}
 	while (nptr[i] >= '0' && nptr[i] <= '9')
 	{
 		value = value * 10 + (nptr[i] - '0');

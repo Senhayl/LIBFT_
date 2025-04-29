@@ -6,7 +6,7 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:30:57 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 14:28:08 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/29 15:00:19 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 
 char	*ft_strmap(char const *s, char (*f)(char))
 {
-    int		i;
-    char	*map;
+	int	i;
+	char	*map;
 
 	if (!s || !f)
 		return (NULL);
 	i = 0;
 	while (s[i])
 		i++;
-	map = (char *)malloc(sizeof(char)*(i + 1));
+	map = (char *)malloc(sizeof(char) * (i + 1));
 	if (!map)
 		return (NULL);
 	i = 0;

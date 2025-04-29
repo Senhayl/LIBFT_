@@ -6,7 +6,7 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:13:26 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 14:15:24 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/29 15:06:10 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 int	count_size(int n)
 {
-    int	i;
+	int	i;
 
 	i = 0;
-	if (n == 0) 
+	if (n == 0)
 		return (1);
 	if (n < 0)
 	{
@@ -34,10 +34,10 @@ int	count_size(int n)
 
 char	*ft_itoa(int n)
 {
-    char	*itoa;
-    int	count;
-    int	i;
-    long long int	nb;
+	char		*itoa;
+	int			count;
+	int			i;
+	long long int	nb;
 
 	i = 0;
 	nb = n;

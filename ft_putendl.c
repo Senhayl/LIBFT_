@@ -6,7 +6,7 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:15:33 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 14:41:47 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/29 14:57:53 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_putendl(char const *s)
 	i = 0;
 	while (s[i])
 	{
-		write(1,&s[i],1);
+		write(1, &s[i], 1);
 		i++;
 	}
 	write(1, "\n", 1);

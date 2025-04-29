@@ -6,7 +6,7 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 16:00:35 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 14:39:10 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/29 14:58:45 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 int	ft_lstsize(t_list *lst)
 {
-    int	i;
+	int	i;
 
 	i = 0;
-	while(lst)
+	while (lst)
 	{
 		i++;
 		lst = lst->next;
