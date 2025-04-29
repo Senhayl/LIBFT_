@@ -6,15 +6,15 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:31:35 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 13:31:38 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/29 14:38:46 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-	#include "libft.h"
+#include "libft.h"
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
-    if (c >= 'a' && c <=  'z')
-        c -= 32;
-    return (c);
+	if (c >= 'a' && c <=  'z')
+		c -= 32;
+	return (c);
 }

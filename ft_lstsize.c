@@ -6,21 +6,21 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 16:00:35 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/24 16:06:51 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/29 14:39:10 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_lstsize(t_list *lst)
+int	ft_lstsize(t_list *lst)
 {
-    int i;
+    int	i;
 
-    i = 0;
-    while(lst)
-    {
-        i++;
-        lst = lst->next;
-    }
-    return (i);
+	i = 0;
+	while(lst)
+	{
+		i++;
+		lst = lst->next;
+	}
+	return (i);
 }

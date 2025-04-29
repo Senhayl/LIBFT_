@@ -6,23 +6,23 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:15:41 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 13:15:42 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/29 14:47:59 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putnbr(int n)
+void	ft_putnbr(int n)
 {
-    long    nb;
+	long	nb;
 
-    nb = n;
-    if (nb < 0)
-    {
-        nb = -nb;
-        write(1, '-', 1);
-    }
-    if (nb > 9)
-        ft_putnbr(nb / 10);
-    ft_putchar((nb % 10 + '0'));
+	nb = n;
+	if (nb < 0)
+	{
+		nb = -nb;
+		write(1, '-', 1);
+	}
+	if (nb > 9)
+		ft_putnbr(nb / 10);
+	ft_putchar((nb % 10 + '0'));
 }

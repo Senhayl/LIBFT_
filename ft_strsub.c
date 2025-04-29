@@ -6,7 +6,7 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:31:18 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 14:09:14 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/29 14:11:22 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,27 @@
 
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
-    size_t	i;
-    size_t	j;
-    char	*strsub;
+	size_t	i;
+	size_t	j;
+	char	*strsub;
 
-	if (!s) // Vérification si s est NULL avant toute opération
+	if (!s)
 		return (NULL);
-	if (start >= ft_strlen(s)) // Vérification si start dépasse la longueur de s
+	if (start >= ft_strlen(s))
 		return (NULL);
-	if (start + len > ft_strlen(s)) // Ajuster len si nécessaire
+	if (start + len > ft_strlen(s))
 		len = ft_strlen(s) - start;
-	strsub = (char *)malloc(sizeof(char) * (len + 1)); // Allocation mémoire
-	if (!strsub) // Vérification si malloc a échoué
+	strsub = (char *)malloc(sizeof(char) * (len + 1));
+	if (!strsub)
 		return (NULL);
 	j = 0;
 	i = start;
 	while (s[i] != '\0' && j < len)
 	{
-			strsub[j] = s[i];
-			i++;
-			j++;
+		strsub[j] = s[i];
+		i++;
+		j++;
 	}
-	strsub[j] = '\0'; // Terminer la chaîne avec un caractère nul
+	strsub[j] = '\0';
 	return (strsub);
 }

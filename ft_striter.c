@@ -6,22 +6,22 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:16:18 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 13:16:19 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/29 14:12:17 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_striter(char *s, void (*f)(char *))
+void	ft_striter(char *s, void (*f)(char *))
 {
-    int i;
+    int	i;
 
     i = 0;
-    if (!s || !f)
-        return;
-    while(s[i])
-    {
-        f(s[i]);
-        s++;
-    }
+	if (!s || !f)
+		return;
+	while(s[i])
+	{
+		f(s[i]);
+		s++;
+	}
 }

@@ -6,20 +6,20 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:15:56 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 13:15:57 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/29 14:49:13 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_putstr(char const *s)
+void	ft_putstr(char const *s)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while (s[i])
-    {
-        write(1,&s[i],1);
-        i++;
-    }
+	i = 0;
+	while (s[i])
+	{
+		write(1,&s[i],1);
+		i++;
+	}
 }

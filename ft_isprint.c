@@ -6,15 +6,15 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:13:35 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 13:13:38 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/29 14:41:20 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
-  if ((c >= 0 && c < 32) || c == 127)
-    return (1);
-  return (0);
+	if ((c >= 0 && c < 32) || c == 127)
+		return (1);
+	return (0);
 }

@@ -6,13 +6,13 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:15:24 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 13:15:26 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/29 14:48:14 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_putchar(char c)
+void	ft_putchar(char c)
 {
-    write(1, &c, 1);
+	write(1, &c, 1);
 }

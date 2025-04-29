@@ -6,15 +6,15 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:14:02 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 13:14:05 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/29 14:42:35 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
-  if (c >= '0' && c <= '127')
-    return (1);
-  return (0);
+	if (c >= '0' && c <= '127')
+		return (1);
+	return (0);
 }
