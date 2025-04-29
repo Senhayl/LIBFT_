@@ -6,15 +6,15 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:13:56 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 13:13:58 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/29 13:38:57 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
-  if (c >= '0' && c <=  '9')
-    return (1);
-  return (0);
+	if (c >= '0' && c <=  '9')
+    	return (1);
+	return (0);
 }
