@@ -6,17 +6,17 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:31:10 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 13:38:21 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/29 14:05:16 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_strnstr(char *str, char *to_find)
+char	*ft_strnstr(char *str, char *to_find)
 {
-	int i;
-	int j;
-	int k;
+	int	i;
+	int	j;
+	int	k;
 
 	i = 0;
 	while (str[i] != '\0')
@@ -30,7 +30,7 @@ char    *ft_strnstr(char *str, char *to_find)
 				j++;
 			}
 			if (to_find[j] == '\0')
-				return (&str[i-j]);
+				return (&str[i - j]);
 		}
 		i++;
 	}
