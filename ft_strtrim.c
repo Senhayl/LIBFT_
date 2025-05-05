@@ -6,47 +6,45 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:31:20 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 13:31:22 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/30 12:30:38 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strtrim(char const *s1, char const *set)
+static int	ft_char_in_set(char c, char const *set)
 {
-    size_t start;
-    size_t end;
-    size_t len;
-    char *trimmed;
+	size_t	i;
 
-    if (!s) // Vérification si s est NULL
-        return (NULL);
+	i = 0;
+	while (set[i])
+	{
+		if (set[i] == c)
+			return (1);
+		i++;
+	}
+	return (0);
+}
 
-    // Trouver le premier caractère non blanc
-    start = 0;
-    while (s[start] && (s[start] == ' ' || s[start] == '\n' || s[start] == '\t'))
-        start++;
+char	*ft_strtrim(char const *s1, char const *set)
+{
+	char	*str;
+	size_t	i;
+	size_t	start;
+	size_t	end;
 
-    // Si la chaîne est entièrement composée d'espaces blancs
-    if (s[start] == '\0')
-        return (ft_strdup(""));
-
-    // Trouver le dernier caractère non blanc
-    end = ft_strlen(s) - 1;
-    while (end > start && (s[end] == ' ' || s[end] == '\n' || s[end] == '\t'))
-        end--;
-
-    // Calculer la longueur de la chaîne à copier
-    len = end - start + 1;
-
-    // Allouer la mémoire pour la chaîne résultante
-    trimmed = (char *)malloc(sizeof(char) * (len + 1));
-    if (!trimmed)
-        return (NULL);
-
-    // Copier la partie utile de la chaîne
-    ft_strncpy(trimmed, &s[start], len);
-    trimmed[len] = '\0'; // Ajouter le caractère nul
-
-    return (trimmed);
+	start = 0;
+	while (s1[start] && ft_char_in_set(s1[start], set))
+		start++;
+	end = ft_strlen(s1);
+	while (end > start && ft_char_in_set(s1[end - 1], set))
+		end--;
+	str = (char*)malloc(sizeof(*s1) * (end - start + 1));
+	if (!str)
+		return (NULL);
+	i = 0;
+	while (start < end)
+		str[i++] = s1[start++];
+	str[i] = 0;
+	return (str);
 }

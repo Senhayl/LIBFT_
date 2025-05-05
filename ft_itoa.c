@@ -6,7 +6,7 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:13:26 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 15:06:10 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/05/02 16:35:28 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,21 @@
 
 int	count_size(int n)
 {
-	int	i;
+	long long int	nb;
+	int				i;
 
+	nb = n;
 	i = 0;
-	if (n == 0)
+	if (nb == 0)
 		return (1);
-	if (n < 0)
+	if (nb < 0)
 	{
-		n = -n;
+		nb = -nb;
 		i++;
 	}
-	while (n > 0)
+	while (nb > 0)
 	{
-		n = n / 10;
+		nb = nb / 10;
 		i++;
 	}
 	return (i);

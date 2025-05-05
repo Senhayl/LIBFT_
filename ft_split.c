@@ -6,13 +6,31 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/27 10:38:49 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 14:38:27 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/30 11:32:27 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 // Fonction pour compter le nombre de mots dans la chaîne
+
+char	*ft_strncpy(char *s1, const char *s2, size_t n)
+{
+	unsigned int	size;
+
+	if (!s1 || !s2)
+		return (s1);
+	size = ft_strlen(s2);
+	if (size >= n)
+		ft_memcpy(s1, s2, n);
+	else
+	{
+		ft_memcpy(s1, s2, size);
+		ft_memset(s1 + size, '\0', n - size);
+	}
+	return (s1);
+}
+
 static	size_t count_words(char const *s, char c)
 {
     size_t	count;

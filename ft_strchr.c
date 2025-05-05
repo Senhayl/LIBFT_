@@ -6,24 +6,21 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:16:04 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 14:54:56 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/05/02 16:27:29 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
-	int	lens;
-
-	if (!s)
-		return (NULL);
-	lens = ft_strlen(s);
-	while (lens >= 0)
-	{
-		if (s[lens] == (char) c)
-			return ((char *)s + lens);
-		lens--;
-	}
-	return (NULL);
+    while (*s)
+    {
+        if (*s == (char)c)
+            return ((char *)s);
+        s++;
+    }
+    if ((char)c == '\0') // Si c est '\0', retourne un pointeur vers la fin
+        return ((char *)s);
+    return (NULL);
 }

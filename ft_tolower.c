@@ -6,13 +6,13 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:31:31 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 15:06:48 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/30 12:31:09 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(char c)
+int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		c += 32;

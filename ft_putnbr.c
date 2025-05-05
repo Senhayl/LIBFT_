@@ -6,11 +6,16 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:15:41 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 14:47:59 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/30 11:29:21 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
 
 void	ft_putnbr(int n)
 {
@@ -20,7 +25,7 @@ void	ft_putnbr(int n)
 	if (nb < 0)
 	{
 		nb = -nb;
-		write(1, '-', 1);
+		write(1, "-", 1);
 	}
 	if (nb > 9)
 		ft_putnbr(nb / 10);

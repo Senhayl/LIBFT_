@@ -6,7 +6,7 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:16:18 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/29 15:06:41 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/04/30 11:37:13 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_striter(char *s, void (*f)(char *))
 		return ;
 	while (s[i])
 	{
-		f(s[i]);
+		f(&s[i]);
 		s++;
 	}
 }
