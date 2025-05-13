@@ -6,7 +6,7 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:16:11 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/05/13 11:48:44 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/05/13 11:52:07 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ char	*ft_strdup(const char *s)
 		dup[i] = s[i];
 	i++;
 	}
+	dup[i] = '\0';
 	return (dup);
 }
  
