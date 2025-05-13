@@ -6,7 +6,7 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:15:10 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/05/09 10:26:52 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/05/13 13:15:24 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 
     if (!dest && !src && n > 0)
         return (NULL);
-    if (dest > src) // Si dest est après src, copie inversée
+    if (dest > src)
     {
         i = n;
         while (i > 0)
@@ -27,7 +27,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
             ((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
         }
     }
-    else // Sinon, copie normale
+    else
     {
         i = 0;
         while (i < n)
