@@ -6,7 +6,7 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 11:00:53 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/05/09 16:17:47 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/05/13 13:05:06 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,37 +14,23 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list	*new_list;
-	t_list	*new_node;
-	t_list	*current;
+    t_list	*new_list = NULL;
+    t_list	*new_node;
 
-	new_list = NULL;
-	current = NULL;
 	if (!lst || !f)
 		return (NULL);
-	while (lst)
-	{
-		new_node = (t_list *)malloc(sizeof(t_list));
-		if (!new_node)
-		{
-			while (new_list)
-			{
-				current = new_list->next;
-				if (del)
-					del(new_list->content);
-				free(new_list);
-				new_list = current;
-			}
-			return (NULL);
-		}
-		new_node->content = f(lst->content);
-		new_node->next = NULL;
-		if (!new_list)
-			new_list = new_node;
-		else
-			current->next = new_node;
-		current = new_node;
-		lst = lst->next;
-	}
-	return (new_list);
+    while (lst)
+    {
+        if (!(new_node = (t_list *)malloc(sizeof(t_list))) || 
+            !(new_node->content = f(lst->content)))
+        {
+            ft_lstclear(&new_list, del);
+            free(new_node);
+            return (NULL);
+        }
+        new_node->next = NULL;
+        ft_lstadd_back(&new_list, new_node);
+        lst = lst->next;
+    }
+    return (new_list);
 }
