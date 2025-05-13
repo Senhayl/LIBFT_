@@ -6,7 +6,7 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:13:56 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/30 11:25:25 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/05/13 13:08:52 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
-    	return (1);
+		return (1);
 	return (0);
 }
