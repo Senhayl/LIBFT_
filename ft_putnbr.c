@@ -6,7 +6,7 @@
 /*   By: chevrethis <chevrethis@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:15:41 by chevrethis        #+#    #+#             */
-/*   Updated: 2025/04/30 11:29:21 by chevrethis       ###   ########.fr       */
+/*   Updated: 2025/05/12 17:28:22 by chevrethis       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,5 @@ void	ft_putnbr(int n)
 	}
 	if (nb > 9)
 		ft_putnbr(nb / 10);
-	ft_putchar((nb % 10 + '0'));
+	ft_putchar(nb % 10 + '0');
 }
